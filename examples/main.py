@@ -9,7 +9,6 @@ from forecast.A_user_input import (
     display_column_info
 )
 
-
 def interactive_prediction_mode(predictor, df):
     """
     Run interactive prediction mode where user can input parameters
