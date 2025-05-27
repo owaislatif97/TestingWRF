@@ -1,13 +1,9 @@
-import sys
-import os
-# Ensure the parent directory is included in the system path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from src.forecast.A_data_loader import DataLoader
-from src.forecast.B_preprocessing import DataPreprocessor
-from src.forecast.C_models import ModelTrainer
-from src.forecast.D_predictor import Predictor
-from src.forecast.E_evaluation import Evaluator
-from src.forecast.A_user_input import (
+from forecast.A_data_loader import DataLoader
+from forecast.B_preprocessing import DataPreprocessor
+from forecast.C_models import ModelTrainer
+from forecast.D_predictor import Predictor
+from forecast.E_evaluation import Evaluator
+from forecast.A_user_input import (
     get_user_input,
     get_location_choice,
     display_column_info
